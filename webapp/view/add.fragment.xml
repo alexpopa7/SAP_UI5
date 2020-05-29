@@ -1,0 +1,38 @@
+<core:FragmentDefinition 
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:core="sap.ui.core">
+
+    <Dialog>
+		<f:SimpleForm id="addBook" editable="true" title="Add Book" layout="ResponsiveGridLayout" labelSpanL="3" labelSpanM="3" emptySpanL="4" emptySpanM="4" columnsL="2" columnsM="2">
+							<f:content>
+								<Label text="ISBN" design="Bold"/>
+								<Input id="idIsbn"/>
+
+								<Label text="Title" design="Bold"/>
+								<Input id="idTitle"/>
+
+								<Label text="Author" design="Bold"/>
+								<Input id="idAuthor"/>
+
+								<Label text="Date Published"  design="Bold"/>
+								<DatePicker id="idDate"/>
+
+								<Label text="Language (EN, DE, RO)" design="Bold"/>
+								<Input id="idLanguage"/>
+
+								<Label text="Total Nr. Of Books" design="Bold"/>
+								<Input id="idTotalBooks"/>
+
+                                <Label text="Nr. Of Available Books" design="Bold"/>
+								<Input id="idAvailableBooks"/>
+							</f:content>
+		</f:SimpleForm>
+
+        <buttons>
+            <Button id="closeButton" text="Close" press="onClosePressed" type="Reject"/>
+            <Button id="addButton" text="Save" press="onSavePressed" type="Accept"/>
+        </buttons>
+	</Dialog>
+</core:FragmentDefinition>
