@@ -67,7 +67,7 @@ sap.ui.define([
             this.dialog = sap.ui.xmlfragment("updateBook","org.ubb.books.view.update", this);
             this.dialog.open();
 
-            var dateFormat = sap.ui.core.format.DateFormat.getDateInstance({pattern : "dd/MM/yyyy" }); 
+            var dateFormat = sap.ui.core.format.DateFormat.getDateInstance({pattern : "MMM dd, yyyy" }); 
             var date1 = new Date(date);  
             var dateFormatted = dateFormat.format(date1);
 
