@@ -48,7 +48,6 @@ sap.ui.define([
             this.odataModel.create('/Z801_BOOK_ENTITYSet', oBook);
             this.dialog.close();
             this.dialog.destroy();
-            alert("Added Successfully");
             window.location.reload();
         },
 
